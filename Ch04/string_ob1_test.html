@@ -1,0 +1,60 @@
+<script>
+    var t = "Hello Thank you good luck to you";
+
+    document.write("인덱스 16에 저장된 문자를 불러옵니다.<br>");
+    document.write(t.charAt(16),"<br>");
+    
+    document.write("문자열 왼쪽에서부터 제일 먼저 발견된 'you'의 인덱스 값을 반환합니다.<br>");
+    document.write(t.indexOf("you"),"<br>");
+
+    document.write("문자열 인덱스 16 위치부터 제일 먼저 발견된 'you'의 인덱스 값을 반환합니다.<br>");
+    document.write(t.indexOf("you",16),"<br>");
+
+    document.write("문자열 오른쪽에서부터 왼쪽 방향으로 제일 먼저 발견된 'you'의 인덱스 값을 반환합니다.<br>");
+    document.write(t.lastIndexOf("you"),"<br>");
+
+    document.write("문자열 인덱스 25부터 왼쪽 방향으로 제일 먼저 발견된 'you'의 인덱스 값을 반환합니다.<br>");
+    document.write(t.lastIndexOf("you",25),"<br>");
+
+    document.write("문자열 왼쪽에서부터 제일 먼저 발견된 'luck'과 일치되는 문자를 찾아 반환합니다.<br>");
+    document.write(t.match("luck"),"<br>");
+
+    document.write("문자열 왼쪽에서부터 제일 먼저 발견된 'you'의 인덱스 값을 반환합니다.<br>");
+    document.write(t.search("you"),"<br>");
+
+    document.write("문자열 인덱스 21부터 네 글자를 가져옵니다.<br>");
+    document.write(t.substr(21,4),"<br>");
+
+    document.write("문자열 인덱스 6부터 12이전까지의 문자를 가져옵니다.<br>");
+    document.write(t.substring(6,12),"<br>");
+
+    document.write("문자열 왼쪽에서부터 제일 먼저 발견된 'you'를 'me'로 치환합니다.<br>");
+    document.write(t.replace("you","me"),"<br>");
+
+    document.write("문자열의 영문자가 모두 소문자로 바뀐 문자열을 반환합니다.<br>");
+    document.write(t.toLowerCase(),"<br>");
+
+    document.write("문자열의 영문자가 모두 대문자로 바뀐 문자열을 반환합니다.<br>");
+    document.write(t.toUpperCase(),"<br>");
+
+    document.write("문자열의 문자 총 개수를 반환합니다. 이때 공백도 문자로 취급합니다.<br>");
+    document.write(t.length,"<br>");
+
+    document.write("<hr>");
+    
+    document.write("공백 문자를 기준으로 문자를 분리합니다. 분리된 문자열은 배열에 저장되어 s에 할당합니다.<br>");
+    var s = t.split(" ");
+    document.write("s의 인덱스 0에 저장된 문자열을 출력합니다.<br>");
+    document.write(s[0],"<br>");
+    document.write("s의 인덱스 4에 저장된 문자열을 출력합니다.<br>");
+    document.write(s[4],"<br>");
+
+
+    
+    var str="A";
+    document.write("변수에 저장된 문자열 중 0번 인덱스의 문자 'A'의 아스키 코드 값을 반환합니다.<br>");
+    var t=str.charCodeAt(0);
+
+    document.write(t);
+    document.write(String.fromCharCode(65),"<br>");
+</script>
